@@ -1,12 +1,153 @@
 <!DOCTYPE html>
 
 <html lang="de">
-
     <head>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <title>cat hotel</title>
     </head>
-    
-    <body></body>
 
+    <body>
+        <header class="header">
+            <div class="headerLogo">
+                <img src="images/MeowManorLogo.png" alt="Logo" height="75px">
+            </div>
+            <nav>
+                <div class="searchbar">
+                    <input type="text" placeholder="Suche.. :)">
+                </div>
+                <div class="dropdownmenu">
+                    <button class="dropdownbtn">Home</button>
+                    <div class="dropdowncontent">
+                        <a href="aboutus.html">Über uns</a>
+                        <a href="booking.html">Buchungsformular</a>
+                        <a href="login.html">Login</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <div class="forms">
+            <div class="formstitle">
+                <p>Buche jetzt</p>
+            </div>
+            <div class="formsbg">
+                <form action="booking.html">
+                    <div class="mpbooking">
+                        <div class="mpbookingcontent" style="margin-top: 25px;">
+                            <label><i class="fa fa-calendar-o"></i> Check-In</label><br>
+                            <input class="" type="date" placeholder="DD MM YYYY" name="checkIn" required>
+                        </div>
+                        <div class="mpbookingcontent">
+                            <label><i class="fa fa-calendar-o"></i> Check-Out</label><br>
+                            <input class="" type="date" placeholder="DD MM YYYY" name="checkOut" required>
+                        </div>
+                        <div class="mpbookingcontent">
+                            <label><i class="fa fa-male"></i> Erwachsene</label><br>
+                            <input class="" type="number" placeholder="1" name="adults" min="1" max="6" required>
+                        </div>
+                        <div class="mpbookingcontent">
+                            <label><i class="fa fa-child"></i> Kinder</label><br>
+                            <input class="" type="number" placeholder="0" name="kids" min="0" max="6" required>
+                        </div>
+                    <button class="mpbookingbtn" type="submit">Verfügbarkeit überprüfen <i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="welcome">
+            <div class="welcometitle">
+                <h1>Willkommen im Meow Manor</h1>
+                <h2>Ihrem Traumhotel für Menschen, die das Schnurren lieben</h2>
+            </div>
+            <div class="welcomebg">
+                <article class="welcomecontent">
+                    <p>Betreten Sie unser liebevoll gestaltetes Refugium, wo jedes Zimmer ein kleines Königreich und jede Ecke ein kuscheliges Paradies für Samtpfoten ist. Hier tanzen Sonnenstrahlen durch grosse Fenster, leise Melodien von leisen Schnurren erfüllen die Luft und das Aroma frisch gebrühten Kaffees mischt sich mit dem zarten Duft von Katzenminze.</p>
+                    <p>Unser Hotel ist nicht nur ein Ort zum Übernachten – es ist ein Erlebnis, das Herz und Seele streichelt. Wir laden Sie ein, den Alltag hinter sich zu lassen und in eine Welt einzutauchen, in der Menschen und Katzen in vollkommener Harmonie zusammenleben.</p>
+                </article>
+                <table>
+                    Unser Angebot – Ihr Wohlbefinden, ihr Schnurren
+                    
+                    Angebot
+	
+Was Sie erwartet
+	
+Besonderheiten
+Schnurr‑Suite
+	
+Elegante Zimmer mit eigenem Katzenbaum, weichen Kissen und Panoramablick.
+	
+Jede Suite wird von einer „Pflegeratte“ (unsere erfahrenen Katzenbetreuer) persönlich vorbereitet.
+Katzen‑Lounge
+	
+Offener Aufenthaltsbereich mit gemütlichen Sofas, Büchern, Spielzeug und kostenlosem Katzenminz‑Tee.
+	
+Ideal zum Lesen, Arbeiten oder einfach nur zum Beobachten der flauschigen Bewohner.
+Purr‑&‑Play‑Paket
+	
+Tägliche Spiel‑ und Streichel‑Sessions, geführte Yoga‑Stunden mit Schnurrbegleitung und Fotomomente mit unseren Stars.
+	
+Jeder Gast erhält ein persönliches „Schnurr‑Logbuch“, um die Lieblingsmomente festzuhalten.
+Wellness‑Miez
+	
+Entspannungsbäder für Menschen, kombiniert mit einer sanften Pfoten‑Massage der Katzen.
+	
+Aromatherapie‑Öle, beruhigende Musik und ein Hauch von Katzen‑Lavendel.
+Kulinarische Pfötchen
+	
+Frühstücksbuffet mit frisch gebackenem „Mieze‑Muffin“, Katzen‑käsigem Croissant und hausgemachtem „Katzen‑Kaffee“.
+	
+Vegetarische und vegane Optionen, alle serviert in tierisch gut gelaunter Atmosphäre.
+Romantik‑Runde
+	
+Private Zimmerdekoration mit Rosenblüten, Kerzenlicht und einem flauschigen Begleiter für zwei.
+	
+Perfekt für Paare, Jubiläen oder ein unvergessliches Katzen‑Date.
+                </table>
+                <article>
+                    <ul><strong>Sonderaktionen – Jetzt buchen, später schnurren</strong>
+                        <li>Frühbucher-Glück: 15% Rabatt auf alle Buchungen, die mindestens 30 Tage im Voraus erfolgen.</li>
+                        <li>Wochenend-Wunder: Gratis „Schnurr-Yoga“ am Samstag- & Sonntagmorgen für jede Übernachtung über zwei Nächte.</li>
+                        <li>Katzen-Club-Mitgliedschaft: Erhalten Sie bei jedem Aufenthalt einen „Miau-Punkt“, den Sie gegen exklusive Extras (z.B. private Katzen-Fotoshooting-Sessions) eintauschen können.</li>
+                        <li>Familien-Fluff: Kinder unter 12 Jahren übernachten kostenfrei – inklusive einer kleinen „Katzen-Entdecker-Kiste“ zum Basteln und Spielen.</li>
+                    </ul>
+                    <p><strong>Ihr persönlicher Pfoten-Concierge</strong></p>
+                    <p>Haben Sie Fragen, spezielle Wünsche oder möchten Sie Ihr individuelles Schnurr-Erlebnis zusammenstellen? Unser freundliches Team steht Ihnen rund um die Uhr zur Verfügung – per Telefon, E-Mail oder über den Live-Chat auf dieser Seite.</p>
+                    <p>„Im Meow Manor ist jedes Lächeln ein Schnurren, jede Begegnung ein kleines Wunder.“</p>
+                    <p>Wir freuen uns darauf, Sie bald in unserem charmanten Katzenparadies begrüssen zu dürfen. Machen Sie es sich bequem, lehnen Sie sich zurück und lassen Sie das beruhigende Rhythmus des Schnurrens Ihre Sinne umarmen.</p>
+                    <p>Herzlichst Ihr Team vom Meow Manor <3</p>
+                </article>
+            </div>
+        </div>
+    </body>
 </html>
+
+<!--
+<div class="w3-container w3-white w3-padding-16">
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px;">
+          <div class="w3-half w3-margin-bottom">
+            <label><i class="fa fa-calendar-o"></i> Check In</label>
+            <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckIn" required>
+          </div>
+          <div class="w3-half">
+            <label><i class="fa fa-calendar-o"></i> Check Out</label>
+            <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckOut" required>
+          </div>
+        </div>
+        <div class="w3-row-padding" style="margin:8px -16px;">
+          <div class="w3-half w3-margin-bottom">
+            <label><i class="fa fa-male"></i> Adults</label>
+            <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="6">
+          </div>
+          <div class="w3-half">
+            <label><i class="fa fa-child"></i> Kids</label>
+          <input class="w3-input w3-border" type="number" value="0" name="Kids" min="0" max="6">
+          </div>
+        </div>
+        <button class="w3-button w3-dark-grey" type="submit"><i class="fa fa-search w3-margin-right"></i> Search availability</button>
+      </form>
+    </div>

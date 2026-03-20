@@ -108,7 +108,7 @@ body {
 }
 
 .formstitle {
-    margin: 190px 0 0 50px;
+    margin: 280px 0 0 50px;
 }
 
 .formstitle p {
@@ -158,6 +158,69 @@ body {
     background-color: #fffdf5;
     color: #9d40bf;
 }
+
+/* Welcome Section */
+.welcome {
+    display: flex;
+    float: center;
+    flex-direction: column;
+    width: 750px;
+}
+
+.welcomebg {
+    float: inherit;
+    width: 750px;
+    height: auto;
+    background-color: #C085D6;
+    box-shadow: 10px 10px #9d40bf;
+    margin: 0 0 0 45px;
+    border-radius: 25px;
+}
+
+.welcometitle {
+    margin: 150px 0 0 0;
+    justify-items: center;
+    font-family: titleFont;
+    color:#9d40bf;
+}
+
+.welcometitle h1 {
+    font-weight: lighter;
+    font-size: 55px;
+    margin: 0 0 0 18px;
+}
+
+.welcometitle h2 {
+    font-weight: lighter;
+    font-size: 28px;
+    justify-self: center;
+    margin: 5px 0 20px 0;
+}
+
+.welcomecontent {
+    display: flex;
+    width: 700px;
+    justify-self: center;
+    margin-top: 15px;
+    flex-direction: column;
+}
+
+.welcometext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.tablecontent {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 5px
+}
+
+.welcomecontent p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
 
 @media (min-width: 1500px) {
     

@@ -8,6 +8,7 @@
 }
 
 body {
+    background-image: url(images/1x/Zeichenfläche\ 1.png);
     background-color: #fffdf5;
 }
 
@@ -137,7 +138,7 @@ body {
 }
 
 .mpbookingcontent input {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     border: none;
     border-radius: 25px;
@@ -162,7 +163,7 @@ body {
 /* Welcome Section */
 .welcome {
     display: flex;
-    float: center;
+    margin-left: 25px;
     flex-direction: column;
     width: 750px;
 }
@@ -173,7 +174,6 @@ body {
     height: auto;
     background-color: #C085D6;
     box-shadow: 10px 10px #9d40bf;
-    margin: 0 0 0 45px;
     border-radius: 25px;
 }
 
@@ -198,7 +198,6 @@ body {
 }
 
 .welcomecontent {
-    display: flex;
     width: 700px;
     justify-self: center;
     margin-top: 15px;
@@ -221,6 +220,30 @@ body {
     font-size: 14px;
 }
 
+.catpics {
+    display: flex;
+    float: right;
+    flex-direction: column;
+}
+
+.catpicstitle {
+    margin: 280px 50px 0 0;
+}
+
+.catpicstitle p {
+    font-family: titleFont;
+    font-size: 36px;
+    color: #C085D6;
+    margin: 0 0 0 23px;
+}
+
+.catpics img {
+    float: inherit;
+    width: 286px;
+    height: 286px;
+    border-radius: 75%;
+    margin: 45px 0 0 0;
+}
 
 @media (min-width: 1500px) {
     

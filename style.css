@@ -1,5 +1,6 @@
 /* F9ECF9, F2D8F2, E2A7E2
     F5ECF9, EBD8F2, D2A7E2, C085D6 <<<<<<<<
+    FFFDF5
     */
 
 @font-face {
@@ -8,7 +9,8 @@
 }
 
 body {
-    background-image: url(images/1x/Zeichenfläche\ 1.png);
+    background-image: url(images/1x/mf_bg.png);
+    background-position: top left;
     background-color: #fffdf5;
 }
 
@@ -44,6 +46,27 @@ body {
     font-size: 16px;
 }
 
+/* header login 
+.login {
+    margin-top: 25px;
+    margin-right: 25px;
+    position: relative;
+    float: right;
+}
+
+.login a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    float: right;
+    background-color: #D2A7E2;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+*/
+
 /* header drop down menu */
 .dropdownmenu {
     margin-top: 25px;
@@ -55,7 +78,7 @@ body {
 .dropdownbtn {
     float: right;
     background-color: #D2A7E2;
-    color: white;
+    color: #FFFDF5;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -72,6 +95,7 @@ body {
 }
 
 .dropdowncontent a {
+    font-family: Arial, Helvetica, sans-serif;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -104,11 +128,12 @@ body {
     height: 450px;
     background-color: #D2A7E2;
     box-shadow: 10px 10px #C085D6;
-    margin: 0 0 0 45px;
+    margin: 15px 0 0 45px;
     border-radius: 25px;
 }
 
 .formstitle {
+    font-kerning: none;
     margin: 280px 0 0 50px;
 }
 
@@ -147,6 +172,7 @@ body {
     margin-top: 8px;
     padding-left: 25px;
     padding-right: 25px;
+    background-color: #fffdf5;
 }
 
 .mpbookingbtn {
@@ -163,14 +189,15 @@ body {
 /* Welcome Section */
 .welcome {
     display: flex;
-    margin-left: 25px;
+    position: absolute;
+    justify-self: center;
+    align-items: center;
     flex-direction: column;
     width: 750px;
 }
 
 .welcomebg {
-    float: inherit;
-    width: 750px;
+    padding: 23px;
     height: auto;
     background-color: #C085D6;
     box-shadow: 10px 10px #9d40bf;
@@ -182,12 +209,13 @@ body {
     justify-items: center;
     font-family: titleFont;
     color:#9d40bf;
+    font-kerning: none;
 }
 
 .welcometitle h1 {
     font-weight: lighter;
     font-size: 55px;
-    margin: 0 0 0 18px;
+    margin: 0 0 0 0;
 }
 
 .welcometitle h2 {
@@ -220,6 +248,8 @@ body {
     font-size: 14px;
 }
 
+
+/* residents */
 .catpics {
     display: flex;
     float: right;
@@ -227,6 +257,7 @@ body {
 }
 
 .catpicstitle {
+    font-kerning: none;
     margin: 280px 50px 0 0;
 }
 
@@ -238,11 +269,37 @@ body {
 }
 
 .catpics img {
-    float: inherit;
+    display: flex;
+    float: right;
     width: 286px;
     height: 286px;
     border-radius: 75%;
-    margin: 45px 0 0 0;
+    margin: 15px 45px 15px 0;
+}
+
+.aboutus {
+    display: flex;
+    position: absolute;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    width: 950px;
+}
+
+.aboutusbg {
+    padding: 23px;
+    height: auto;
+    background-color: #D2A7E2;
+    box-shadow: 10px 10px #C085D6;
+    border-radius: 25px;
+}
+
+.rooms {
+
+}
+
+.residents {
+    
 }
 
 @media (min-width: 1500px) {

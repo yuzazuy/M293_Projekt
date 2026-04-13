@@ -14,9 +14,35 @@ body {
     background-color: #fffdf5;
 }
 
+h1 {
+    font-family: titleFont;
+    font-weight: lighter;
+    font-size: 55px;
+    margin: 0 0 0 0;
+    color:#9d40bf;
+}
+
+h2 {
+    font-family: titleFont;
+    font-weight: lighter;
+    font-size: 28px;
+    justify-self: center;
+    margin: 5px 0 20px 0;
+    color:#9d40bf;
+}
+
+h3 {
+    font-family: titleFont;
+    font-weight: lighter;
+    font-size: 36px;
+    justify-self: center;
+    margin: 5px 0 0px 0;
+    color: #C085D6;
+}
+
 /* header */
 .header {
-    position: absolute;
+
     background-color: #D2A7E2;
     border-radius: 0px 0px 60px 60px;
     height: 110px;
@@ -212,18 +238,7 @@ body {
     font-kerning: none;
 }
 
-.welcometitle h1 {
-    font-weight: lighter;
-    font-size: 55px;
-    margin: 0 0 0 0;
-}
 
-.welcometitle h2 {
-    font-weight: lighter;
-    font-size: 28px;
-    justify-self: center;
-    margin: 5px 0 20px 0;
-}
 
 .welcomecontent {
     width: 700px;
@@ -280,16 +295,15 @@ body {
 /* about us page */
 .aboutus {
     display: flex;
-    position: absolute;
     justify-self: center;
     align-items: center;
     flex-direction: column;
-    width: 950px;
-    margin-top: 175px;
+    width: 1100px;
+    margin-top: 70px;
 }
 
 .aboutusbg {
-    width: 950px;
+    width: 1100px;
     padding: 23px;
     height: auto;
     background-color: #D2A7E2;
@@ -297,21 +311,55 @@ body {
     border-radius: 25px;
 }
 
+.aboutus aside {
+    align-items: flex-end;
+}
+
+.aboutus img {
+    width: 250px;
+    border-radius: 13%;
+}
+
 .aboutus h2 {
-    justify-items: center;
+    justify-items: left;
     font-family: titleFont;
     font-weight: lighter;
     font-size: 55px;
     margin: 0 0 0 0;
 }
 
-.aboutus p {
+.aboutustext {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    width: 950px;
+    justify-self: center;
+}
+
+.aboutustext article {
+    justify-self: center;
 }
 
 .rooms {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1100px;
+    margin-top: 50px;
+}
 
+.roomsbg {
+    width: 1100px;
+    padding: 23px;
+    height: auto;
+    background-color: #D2A7E2;
+    box-shadow: 10px 10px #C085D6;
+    border-radius: 25px;
+}
+
+.roomstext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 .residents {

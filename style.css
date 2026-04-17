@@ -9,9 +9,13 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-image: url(images/1x/mf_bg.png);
     background-position: top left;
     background-color: #fffdf5;
+    margin: 0;
+    width: 100%;
 }
 
 h1 {
@@ -40,15 +44,22 @@ h3 {
     color: #C085D6;
 }
 
+.indexLayout {
+    display: flex;
+    justify-content: space-evenly; /* verteilt links / mitte / rechts */
+    align-items: flex-start;
+    width: 100%;
+    gap: 20px;
+}
+
 /* header */
 .header {
-
     background-color: #D2A7E2;
     border-radius: 0px 0px 60px 60px;
     height: 110px;
-    width: 100%;
+    width: auto;
     box-shadow: 10px 10px #C085D6;
-    margin: -9px 0 0 -8px;
+    margin: 0 0 0 -8px;
 }
 
 .headerLogo {
@@ -144,23 +155,24 @@ h3 {
 /* index booking form */
 .forms {
     display: flex;
-    float: left;
     flex-direction: column;
+    flex: 2;
+    width: 100%;
+    max-width: 300px;
 }
 
 .formsbg {
     float: inherit;
-    width: 286px;
-    height: 450px;
     background-color: #D2A7E2;
     box-shadow: 10px 10px #C085D6;
-    margin: 15px 0 0 45px;
+    margin: 15px 0 0 0;
     border-radius: 25px;
+    padding-bottom: 20px;
 }
 
 .formstitle {
     font-kerning: none;
-    margin: 280px 0 0 50px;
+    margin: 150px 0 0 20px;
 }
 
 .formstitle p {
@@ -172,6 +184,7 @@ h3 {
 
 .mpbooking {
     display: flex;
+    align-self: center;
     align-items: left;
     margin-left: 10px;
     flex-direction: column;
@@ -193,8 +206,8 @@ h3 {
     font-size: 16px;
     border: none;
     border-radius: 25px;
-    width: 200px;
-    height: 35px;
+    width: 100%;
+    max-width: 180px;
     margin-top: 8px;
     padding-left: 25px;
     padding-right: 25px;
@@ -203,9 +216,10 @@ h3 {
 
 .mpbookingbtn {
     font-size: 16px;
-    width: 225px;
-    height: 35px;
-    margin: 23px 0 0 20px;
+    width: auto;
+    max-width: 250px;
+    align-self: center;
+    margin: 23px 0 0 0;
     border: none;
     border-radius: 25px;
     background-color: #fffdf5;
@@ -215,14 +229,15 @@ h3 {
 /* Welcome Section */
 .welcome {
     display: flex;
-    position: absolute;
-    justify-self: center;
-    align-items: center;
+    flex-basis: 1050px;
+    justify-content: center;
     flex-direction: column;
-    width: 750px;
+    align-items: center;
 }
 
 .welcomebg {
+    max-width: 1050px;
+    width: 100%;
     padding: 23px;
     height: auto;
     background-color: #C085D6;
@@ -231,18 +246,16 @@ h3 {
 }
 
 .welcometitle {
-    margin: 150px 0 0 0;
+    margin: 50px 0 0 0;
     justify-items: center;
     font-family: titleFont;
     color:#9d40bf;
     font-kerning: none;
 }
 
-
-
 .welcomecontent {
-    width: 700px;
-    justify-self: center;
+    width: 100%;
+    max-width: 1050px;
     margin-top: 15px;
     flex-direction: column;
 }
@@ -252,10 +265,30 @@ h3 {
     font-size: 14px;
 }
 
+table {
+    width: auto;
+    border-radius: 25%;
+}
+
 .tablecontent {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     margin: 5px
+}
+
+.tablecontent th {
+    background-color: #D2A7E2;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.tablecontent th, td {
+    text-align: left;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #D2A7E2;
 }
 
 .welcomecontent p {
@@ -267,38 +300,38 @@ h3 {
 /* residents */
 .catpics {
     display: flex;
-    float: right;
     flex-direction: column;
+    align-content: center;
+    flex: 2;
+    width: 100%;
+    max-width: 300px;
 }
 
 .catpicstitle {
     font-kerning: none;
-    margin: 280px 50px 0 0;
+    margin: 150px 0 0 20px;
 }
 
 .catpicstitle p {
     font-family: titleFont;
     font-size: 36px;
     color: #C085D6;
-    margin: 0 0 0 23px;
+    margin: 0 0 0 0;
 }
 
 .catpics img {
-    display: flex;
-    float: right;
-    width: 286px;
-    height: 286px;
-    border-radius: 75%;
-    margin: 15px 45px 15px 0;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+    margin-top: 15px;
 }
 
 /* about us page */
 .aboutus {
     display: flex;
-    justify-self: center;
     align-items: center;
     flex-direction: column;
-    width: 1100px;
+    width: 100%; 
     margin-top: 70px;
 }
 

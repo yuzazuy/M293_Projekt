@@ -44,6 +44,39 @@ h3 {
     color: #C085D6;
 }
 
+footer {
+    width: 100%;
+    background-color: #D2A7E2;
+    padding: 15px 0 25px 0;
+}
+
+/* footer content */
+.footercontent {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #9d40bf;
+
+}
+
+.footercontact {
+    margin: 0 35px 0 35px;
+}
+
+.footerstuff {
+    margin: 0 35px 0 35px;
+}
+
+.footerlinks {
+    margin: 0 35px 0 35px;
+}
+
+.footerlinks a {
+    color: #9d40bf;
+    text-decoration: none;
+}
+
 .indexLayout {
     display: flex;
     justify-content: space-evenly; /* verteilt links / mitte / rechts */
@@ -233,6 +266,7 @@ h3 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 45px;
 }
 
 .welcomebg {
@@ -240,9 +274,10 @@ h3 {
     width: 100%;
     padding: 23px;
     height: auto;
-    background-color: #C085D6;
-    box-shadow: 10px 10px #9d40bf;
+    background-color: #D2A7E2;
+    box-shadow: 10px 10px #C085D6;
     border-radius: 25px;
+    padding-bottom: 25px;
 }
 
 .welcometitle {
@@ -277,7 +312,7 @@ table {
 }
 
 .tablecontent th {
-    background-color: #D2A7E2;
+    background-color: #C085D6;
     font-weight: lighter;
     text-align: left;
 }
@@ -288,7 +323,7 @@ table {
 }
 
 tr:nth-child(even) {
-    background-color: #D2A7E2;
+    background-color: #C085D6;
 }
 
 .welcomecontent p {
@@ -391,12 +426,48 @@ tr:nth-child(even) {
 }
 
 .roomstext {
+    
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 
 .residents {
     
+}
+
+
+
+/* impressum */
+.infos {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+}
+
+.infosbg {
+    width: 100%;
+    max-width: 1300px;
+    background-color:#D2A7E2;
+    border-radius: 25px;
+    padding: 23px;
+    color: #9d40bf;
+}
+
+.infoscontent {
+    width: 100%;
+    max-width: 1050px;
+    margin-top: 15px;
+    flex-direction: column;
+}
+
+.infosbg b {
+    font-size: 16px;
+}
+
+.infosbg div {
+    padding: 35px;
 }
 
 @media (min-width: 1500px) {

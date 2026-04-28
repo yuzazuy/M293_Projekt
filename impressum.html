@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="newstyle.css">
         <title>cat hotel</title>
     </head>
     <body>
@@ -19,6 +19,7 @@
                 <div class="dropdownmenu">
                     <button class="dropdownbtn">Home</button>
                     <div class="dropdowncontent">
+                        <a href="index.html">Home</a>
                         <a href="aboutus.html#aboutusdiv">Über uns</a>
                         <a href="aboutus.html#roomsdiv">Die Zimmer</a>
                         <a href="aboutus.html#residentsdiv">Unsere Lieblinge</a>
@@ -28,10 +29,11 @@
             </nav>
         </header>
         <main>
-            <div class="infos">
-                <div class="infosbg">
-                    <div class="infoscontent">
-                        <p><b>1 Impressum</b></p>
+            <div class="flexLayout">
+            <div class="infos background content">
+                
+                    <div  id="impressum">
+                        <p><strong>1 Impressum</strong></p>
                         <p>Name / Firma: Meow Mansion <br>
                             Rechtsform: AG <br>
                             Vertreten durch: Lena Hartmann <br><br>
@@ -45,15 +47,15 @@
                             Website: https://www.meow-mansion.ch <br><br>
                             Handelsregister: <br>
                             Handelsregisteramt Zürich, HRB 123456 <br>
-                            Umsatz- bzw. Mehrwertsteuer-Nr.: CHE-123.456.789 MWST</p>
-                        <p><b>2 Datenschutzerklärung nach DSG</b></p>
-                        <p>2.1 Verantwortliche Stelle</p>
+                            Umsatz- bzw. Mehrwertsteuer-Nr.: CHE-123.456.789 MWST</p> <br>
+                        <p id="datenschutz"><strong>2 Datenschutzerklärung nach DSG</strong></p>
+                        <p><b>2.1 Verantwortliche Stelle</b></p>
                         <p>Meow Mansion AG <br>
                             Musterstrasse 13, 1312 Muster-Zürich, Schweiz <br>
                             E-Mail: datenschutz@meow-mansion.ch <br>
                             Telefon: +41 (0) 44 123 45 67</p>
-                        <table class="infostablecontent">    
-                            <p>2.2 Zweck, Art und Rechtsgrundlage der Verarbeitung (Art. 4-7 DSG)</p>
+                        <table class="content">    
+                            <p><b>2.2 Zweck, Art und Rechtsgrundlage der Verarbeitung (Art. 4-7 DSG)></b></p>
                             <thead>
                                 <tr>
                                     <th>Zweck</th>
@@ -89,41 +91,290 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <p>2.3 Empfänger / Auftragsverarbeiter</p>
+                        <p><b>2.3 Empfänger / Auftragsverarbeiter</b></p>
                             <ul>
                                 <li>Zahlungsdienstleister (z.B. Twint, PayPal) – zur Abwicklung der Zahlung</li>
                                 <li>Hosting-Provider (z.B. Swisscom, Amazon Web Services) – zur Bereitstellung der Website</li>
                                 <li>Analyse-Dienstleister (z.B. Matomo, Google Analytics) – zur Auswertung des Nutzerverhaltens</li>
                                 <li>Behörden (z.B. kantonales Gesundheitsamt) – bei gesetzlicher Auskunftspflicht</li>
                             </ul>
-                        
+                        <p><b>2.4 Übermittlung in Drittländer</b></p>
+                            <p>Falls personenbezogene Daten in Länder ausserhalb der Schweiz übermittelt werden (z.B. USA bei GoogleAnalytics), 
+                                stellen wir sicher, dass ein angemessenes Schutzniveau (z.B. EU-Standardvertragsklauseln, Privacy-Shield-Äquivalente 
+                                oder vertragliche Garantien) gemäss Art. 5 Abs. 3 DSG und Art. 7 DSG besteht.</p>
+                        <p><b>2.5 Speicherdauer (Art. 13 DSG)</b></p>
+                            <table class="content">
+                                <thead>
+                                    <tr>
+                                        <th>Datenkategorie</th>
+                                        <th>Aufbewahrungsfrist</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Buchungsdaten (inkl. Zahlungsdaten)</td>
+                                        <td>10 Jahre (Buchhaltung, GoBD-Entsprechung)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kontakt-/Newsletter-Daten</td>
+                                        <td>3 Jahre nach letzter Interaktion (sofern keine Einwilligung widerrufen wurde)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Log-Dateien (Server-Logs)</td>
+                                        <td>6 Monate</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cookies (technisch notwendige)</td>
+                                        <td>Dauer der Browsersitzung</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Analyse-Cookies (Google Analytics)</td>
+                                        <td>14 Monate (Standard-Einstellung)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <p><b>2.6 Rechte der betroffenen Personen (Art. 15-21 DSG)</b></p>
+                            <table class="content">
+                                <thead>
+                                    <tr>
+                                        <th>Recht</th>
+                                        <th>Beschreibung</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Auskunft (Art. 15)</td>
+                                        <td>Sie erhalten Bestätigung, welche personenbezogenen Daten verarbeitet werden, und erhalten eine Kopie</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Berichtigung (Art. 16)</td>
+                                        <td>Unrichtige Daten werden korrigiert</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Löschung (Art. 17)</td>
+                                        <td>Daten werden gelöscht, sofern keine gesetzliche Aufbewahrungspflicht besteht</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Einschränkung (Art. 18)</td>
+                                        <td>Verarbeitung wird eingeschränkt, bis die Richtigkeit geprüft ist</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Datenübertragbarkeit (Art. 19)</td>
+                                        <td>Sie erhalten Ihre Daten in einem strukturierten, gängigen Format</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Widerspruch (Art. 20)</td>
+                                        <td>Sie können der Verarbeitung für Direktmarketing widersprechen</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Beschwerde (Art. 21)</td>
+                                        <td>Beschwerde bei der kantonalen bzw. Bundesdatenschutzbehörde</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <p><b>2.7 Cookies & Einwilligungs-Management (Art. 4 Abs. 2 DSG)</b></p>
+                            <ul>
+                                <li>Beim ersten Besuch erscheint ein Cookie-Banner</li>
+                                <li>Nur notwendige Cookies (z.B. Session-Cookie) werden ohne Einwilligung gesetzt</li>
+                                <li>Für Analyse-Cookies (z.B. Matomo, Google Analytics) und Social-Media-Plugins holen wir eine opt-in-Einwilligung ein</li>
+                                <li>Das Consent-Tool speichert die Einwilligung nach Art. 7 DSG und ermöglicht jederzeit einen Widerruf</li>
+                            </ul>
+                        <p><b>2.8 Datenschutzbeauftragter</b></p>
+                            <p>Name: Dr. Jana Datenschutz <br>
+                                E-Mail: dsg@meow-mansion.ch <br>
+                                Telefon: +41 (0) 44 123 45 68</p> <br>
+                        <p id="agb"><strong>3 Allgemeine Geschäftsbedingungen (AGB)</strong></p>
+                        <p><b>§ 1 Geltungsbereich</b></p>
+                        <ol>
+                            <li>Diese AGB gelten für sämtliche Verträge zwischen dem Betreiber des Katzenhotels (nachfolgend „Betreiber“) 
+                                und dem Kunden (nachfolgend „Gast“) über die Nutzung der Hotel- und Serviceleistungen.</li>
+                            <li>Abweichende, entgegenstehende oder ergänzende Geschäftsbedingungen des Gastes finden keine Anwendung, 
+                                es sei denn, der Betreiber hat ihrer Geltung ausdrücklich schriftlich zugestimmt.</li>
+                        </ol>
+                        <p><b>§ 2 Vertragsschluss</b></p>
+                        <ol>
+                            <li>Der Gast wählt über das Online-Buchungssystem ein Zimmer bzw. ein Leistungs-Paket aus, gibt die 
+                                erforderlichen Daten ein und bestätigt die Buchung durch Anklicken des Buttons „Jetzt buchen“.</li>
+                            <li>Der Betreiber bestätigt den Eingang der Buchungsanfrage per E-Mail. Der Vertrag kommt erst mit dieser Bestätigung zustande.</li>
+                        </ol>
+                        <p><b>§ 3 Leistungen des Betreibers</b></p>
+                        <p>Der Betreiber stellt dem Gast ein sauber gereinigtes Zimmer, Zugang zu den Katzen-Lounges, tägliche Streichel- und Spielzeiten, 
+                            optionales Frühstück sowie weitere im Buchungsprozess ausgewählte Zusatzleistungen bereit. Die im Zimmer befindlichen Katzen 
+                            sind Teil des Hotelbetriebs und dürfen nur nach Anweisung des Personals gestreichelt bzw. gefüttert werden.</p>
+                        <p><b>§ 4 Preise & Zahlung</b></p>
+                        <ol>
+                            <li>Alle Preise verstehen sich inkl. MWST und gelten zum Zeitpunkt der Buchungsbestätigung</li>
+                            <li>Die Zahlung ist per Kreditkarte, PayPal, TWINT oder Banküberweisung vor Anreise zu leisten. Bei Buchungen über das 
+                                Online-System erfolgt die Abbuchung sofort nach Bestätigung</li>
+                        </ol>
+                        <p><b>§ 5 Stornierung & Rückerstattung</b></p>
+                        <table class="content">
+                            <thead>
+                                <tr>
+                                    <th>Buchungszeitpunkt</th>
+                                    <th>Stornierungsfrist</th>
+                                    <th>Rückerstattung</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Bis 30 Tage vor Anreise</td>
+                                    <td>kostenfrei</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td>29-15 Tage vor Anreise</td>
+                                    <td>kostenfrei</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td>14-7 Tage vor Anreise</td>
+                                    <td>kostenfrei</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td>6-1 Tag vor Anreise</td>
+                                    <td>25%</td>
+                                    <td>75%</td>
+                                </tr>
+                                <tr>
+                                    <td>Am Anreisetag</td>
+                                    <td>50%</td>
+                                    <td>0%</td>
+                                </tr>
+                                <tr>
+                                    <td>No-Show</td>
+                                    <td>50%</td>
+                                    <td>0%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><b>§ 6 Pflichten des Gastes</b></p>
+                        <ol>
+                            <li>Der Gast verpflichtet sich, die Hausordnung zu beachten, insbesondere:</li>
+                            <ul>
+                                <li>keine fremden Tiere mitzubringen</li>
+                                <li>die Hotel-Katzen nicht zu füttern, zu schütteln oder zu reizen</li>
+                                <li>das Rauchen ausschliesslich in den dafür vorgesehenen Bereichen zu betreiben</li>
+                                <li>das Inventar nicht zu beschädigen</li>
+                            </ul>
+                            <li>Bei Beschädigungen an Einrichtung, Inventar oder an den Hotel-Katzen haftet der Gast nach Art. 41 OR (Schadenersatzpflicht)</li>
+                        </ol>
+                        <p><b>§ 7 Haftung</b></p>
+                        <ol>
+                            <li>Der Betreiber haftet für Schäden, die auf vorsätzliche oder grob fahrlässige Pflichtverletzungen des Betreibers, 
+                                seiner Erfüllungsgehilfen oder der Hotel-Katzen zurückzuführen sind</li>
+                            <li>Für leichte Fahrlässigkeit haftet der Betreiber nur bei Verletzung wesentlicher Vertragspflichten (Kardinalpflichten). 
+                                Die Haftung ist in diesem Fall auf den typischerweise vorhersehbaren Schaden begrenzt</li>
+                            <li>Der Betreiber übernimmt keine Haftung für persönliche Gegenstände des Gastes, die nicht ausdrücklich versichert oder gesichert wurden</li>
+                        </ol>
+                        <p><b>§ 8 Datenschutz</b></p>
+                        <p>Die Verarbeitung personenbezogener Daten des Gastes richtet sich nach der Datenschutzerklärung des Betreibers, die integraler Bestandteil dieser AGB ist 
+                            (vgl. Abschnitt 2 dieser AGB). Der Betreiber verpflichtet sich, die Bestimmungen des schweizerischen Datenschutzgesetzes (DSG) einzuhalten.</p>
+                        <p><b>§ 9 Schlussbestimmungen</b></p>
+                        <ol>
+                            <li>Es gilt das Recht der Schweizerischen Eidgenossenschaft</li>
+                            <li>Gerichtsstand für sämtliche Streitigkeiten aus dem Vertragsverhältnis ist der Sitz des Betreibers, sofern der Gast Kaufmann, 
+                                juristische Person des öffentlichen Rechts oder ein Sondervermögen ist</li>
+                            <li>Sollten einzelne Bestimmungen dieser AGB unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt. 
+                                Die unwirksame Bestimmung wird durch eine wirksame Regelung ersetzt, die dem wirtschaftlichen Zweck der unwirksamen Bestimmung am nächsten kommt</li>
+                        </ol> <br>
+                        <p id="faq"><strong>4 FAQ (häufig gestellte Fragen)</strong></p>
+                        <table class="content">
+                            <thead>
+                                <tr>
+                                    <th>Frage</th>
+                                    <th>Antwort</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Wie kann ich ein Zimmer buchen?</td>
+                                    <td>Nutzen Sie das Online-Buchungssystem oben rechts auf der Startseite, wählen Sie Anreise-/Abreisedatum, Zimmertyp und gewünschte 
+                                        Zusatzleistungen und schliessen Sie die Buchung mit Ihrer bevorzugten Zahlungsmethode ab.</td>
+                                </tr>
+                                <tr>
+                                    <td>Sind die Katzen im Hotel immer anwesend?</td>
+                                    <td>Ja – wir betreiben eine 24 h-Katzen-Lounge. Die Tiere werden von erfahrenen Tierpflegern betreut und haben feste Ruhe- und Spielzeiten.</td>
+                                </tr>
+                                <tr>
+                                    <td>Kann ich meine eigene Katze mitbringen?</td>
+                                    <td>Nein. Das Konzept des Hotels basiert auf einem kontrollierten Katzenbestand, um Allergien, Stress und gesundheitliche Risiken zu minimieren.</td>
+                                </tr>
+                                <tr>
+                                    <td>Wie lange kann ich im Zimmer bleiben?</td>
+                                    <td>Die Mindestaufenthaltsdauer beträgt eine Nacht. Für längere Aufenthalte bieten wir ab 5 Nacht-Aufenthalten Sonderkonditionen an.</td>
+                                </tr>
+                                <tr>
+                                    <td>Welche Zahlungsmethoden akzeptieren Sie?</td>
+                                    <td>Kreditkarte (Visa, Mastercard, American Express), PayPal, TWINT und Banküberweisung (bei Vorab-Zahlung).</td>
+                                </tr>
+                                <tr>
+                                    <td>Gibt es ein Frühstücksangebot?</td>
+                                    <td>Ja – unser Miau-Frühstück beinhaltet frische Backwaren, Joghurt, Obst, Kaffee/Tee und ein spezielles Katzen-Leckerli-Buffet (nur für die Hotel-Katzen).</td>
+                                </tr>
+                                <tr>
+                                    <td>Wie kann ich ein Sonderpaket buchen (z.B. Romantik-Runde)?</td>
+                                    <td>Sonderpakete können im Buchungsprozess als Add-On ausgewählt werden. Alternativ können Sie uns direkt per E-Mail oder Telefon kontaktieren, um individuelle Wünsche zu besprechen.</td>
+                                </tr>
+                                <tr>
+                                    <td>Was passiert, wenn ich meine Buchung stornieren muss?</td>
+                                    <td>Sie können kostenfrei bis zu 6 Tage vor Anreise stornieren (siehe AGB). Die Stornierung erfolgt über Ihr Kundenkonto oder per E-Mail an unser Team.</td>
+                                </tr>
+                                <tr>
+                                    <td>Sind die Zimmer barrierefrei?</td>
+                                    <td>Einige Zimmer (Nr. 101-104) sind rollstuhlgerecht ausgestattet. Bitte geben Sie bei der Buchung Ihren Bedarf an, wir reservieren das passende Zimmer für Sie.</td>
+                                </tr>
+                                <tr>
+                                    <td>Wie ist die Hygieneregelung für die Katzen?</td>
+                                    <td>Alle Katzen werden regelmässig vom Tierarzt untersucht, geimpft und entwurmt. Das Hotel wird wöchentlich von einem zertifizierten Hygienedienst geprüft.</td>
+                                </tr>
+                                <tr>
+                                    <td>Kann ich ein Katzen-Fototermin buchen?</td>
+                                    <td>Ja – wir bieten gegen Aufpreis ein professionelles Fotoshooting mit unseren Katzen an. Terminvereinbarung mindestens 48 Stunden im Voraus.</td>
+                                </tr>
+                                <tr>
+                                    <td>Wie erreiche ich den Kundenservice?</td>
+                                    <td>Telefon: +41 (0) 44 123 45 67 (Mo-Fr 09:00–18:00) <br> E-Mail: service@katzenhotel-muster.ch</td>
+                                </tr>
+                                <tr>
+                                    <td>Kann ich meine Buchung nachträglich ändern?</td>
+                                    <td>Änderungen (Datum, Zimmertyp, Zusatzleistungen) sind bis zu 48 Stunden vor Anreise kostenlos möglich. Änderungen danach können je nach Verfügbarkeit und Aufpreis erfolgen.</td>
+                                </tr>
+                                <tr>
+                                    <td>Gibt es eine Kleideraufbewahrung für meine Kleidung?</td>
+                                    <td>Ja – wir stellen Ihnen einen sicheren Kleiderschrank im Zimmer zur Verfügung. Für grössere Gepäckstücke steht ein Gepäckraum am Empfang bereit.</td>
+                                </tr>
+                            </tbody>
+                        </table> <br>
+                        <p><strong>Noch Fragen?</strong></p>
+                        <p>Zögern Sie nicht, uns zu kontaktieren – wir freuen uns darauf, Ihren Aufenthalt bei uns zu einem unvergesslichen Erlebnis für Sie und unsere schnurrenden Mitbewohner zu machen!  </p>
                     </div>
-                </div>
+                
+            </div>
             </div>
         </main>
-        <footer>
-            <div class="footercontent">
-                <div class="footercontact">
+        <footer class="fcontent">
+                <div>
                     <p><b>Kontakt</b></p>
                         <p>Meow Mansion AG <br>
                         Lena Hartmann <br>
                         Musterstrasse 13 <br>
                         1312 Musterstadt</p>
                 </div>
-                <div class="footerstuff">
-                    <p><b>Impressum</b></p>
-                    <p><b>Datenschutz</b></p>
+                <div>
+                    <p><b><a href="impressum.html#impressum">Impressum</a></b></p>
+                    <p><b><a href="impressum.html#datenschutz">Datenschutz</a></b></p>
                     <p><b>AGB</b></p>
                     <p><b>FAQ</b></p>
                 </div>
-                <div class="footerlinks">
+                <div>
                     <p><b>Meow Mansion</b></p>
                         <p><a href="">Über uns</a></p>
                         <p><a href="">Die Residents</a></p> 
                         <p><a href="">Unsere Zimmer</a></p>
                         <p><a href="">Buchungsformular</a></p>
                 </div>
-            </div>
         </footer>
     </body>
 </html>

@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="newstyle.css">
     <link rel="stylesheet" type="text/css" href="slideshow.css">
-
     <title>Über uns.. :)</title>
 </head>
 
@@ -73,7 +72,7 @@
                         Warme Farben, weiche Stoffe und eine besonders gemütliche Atmosphäre laden zum Abschalten ein.</p>
                     <p>Hier genießt ihr ruhige Stunden - vielleicht mit einer Katze, die sich leise dazugesellt
                         und den Moment noch ein bisschen schöner macht.</p>
-                        <div class="slider">
+                        <div class="romanceSlider">
                             <div class="slide"><img src="images/romance/romance1.png" alt="Image 1"></div>
                             <div class="slide"><img src="images/romance/romance2.png" alt="Image 2"></div>
                             <div class="slide"><img src="images/romance/romance3.png" alt="Image 3"></div>
@@ -82,8 +81,6 @@
                             <a class="next" onclick="nextSlide()">&gt;</a>
                         </div>
 
-
-
                     <p><b>Unser Deluxe Zimmer - Komfort mit Charakter</b></p>
                     <p>Die Deluxe Zimmer bieten euch großzügigen Raum, stilvolle Einrichtung und das gewisse
                         Extra an Gemütlichkeit.</p>
@@ -91,7 +88,17 @@
                         besondere Atmosphäre des Meow Manor voll auskosten möchten.</p>
                     <p>Hier ist genug Platz zum Entspannen - und vielleicht auch für einen neugierigen,
                         flauschigen Besucher.</p>
-                    <img src="" alt="">
+                        <div class="deluxeSlider">
+                            <div class="slide"><img src="images/deluxe/deluxe1.png" alt="Image 1"></div>
+                            <div class="slide"><img src="images/deluxe/deluxe2.png" alt="Image 2"></div>
+                            <div class="slide"><img src="images/deluxe/deluxe3.png" alt="Image 3"></div>
+                            <div class="slide"><img src="images/deluxe/deluxe4.png" alt="Image 4"></div>
+                            <div class="slide"><img src="images/deluxe/deluxe5.png" alt="Image 5"></div>    
+                            <a class="prev" onclick="prevSlide()">&lt;</a>
+                            <a class="next" onclick="nextSlide()">&gt;</a>
+                        </div>
+
+
                     <p><b>Unsere Suite - Euer Rückzugsort im Meow Manor</b></p>
                     <p>Unsere Suiten sind die exklusivsten Zimmer im Haus: lichtdurchflutet, besonders geräumig
                         und mit liebevollen Details gestaltet.</p>
@@ -145,7 +152,7 @@
         </div>
     </footer>
 
-
+<!--  slideshow js  -->
     <script>
         const slides = document.querySelectorAll(".slide");
         let currentSlide = 0;
@@ -172,6 +179,7 @@
 
         showSlide(currentSlide);
     </script>
+
 </body>
 
 </html>

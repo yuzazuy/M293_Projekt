@@ -1,6 +1,15 @@
+.romanceSlider {
+  width: 900px;
+  height: 600px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  overflow: hidden;
+  transform: translateY(0%);
+  border-radius: 25px;
+}
 
-
-.slider {
+.deluxeSlider {
   width: 900px;
   height: 600px;
   margin: auto;

@@ -30,7 +30,7 @@
     </header>
     <main>
         <div class="gridLayout">
-            <div class="box aboutus" id="aboutusdiv">
+            <div class="box aboutus" id="aboutus">
                 <img src="images/lena.png" alt="Lena Hartmann">
             </div>
             <div class="box aboutus" style="max-width: 1000px;">
@@ -64,51 +64,67 @@
                 </article>
             </div>
 
-            <div class="box full" id="roomsdiv">
+            <div class="box full" id="rooms">
                 <article class="background content">
-                    <h2 class="title">Unsere Zimmer</h2>
-                    <p><b>Unser Romantikzimmer - Für ruhige, besondere Momente</b></p>
-                    <p>Unser Romantikzimmer ist perfekt für alle, die eine entspannte Auszeit zu zweit suchen.
-                        Warme Farben, weiche Stoffe und eine besonders gemütliche Atmosphäre laden zum Abschalten ein.</p>
-                    <p>Hier genießt ihr ruhige Stunden - vielleicht mit einer Katze, die sich leise dazugesellt
-                        und den Moment noch ein bisschen schöner macht.</p>
-                        <div class="romanceSlider">
+                    <div style="margin-left: 45px;">
+                        <h2 class="title">Unsere Zimmer</h2>
+                        <p><b>Unser Romantikzimmer - Für ruhige, besondere Momente</b></p>
+                        <p>Unser Romantikzimmer ist perfekt für alle, die eine entspannte Auszeit zu zweit suchen.
+                            Warme Farben, weiche Stoffe und eine besonders gemütliche Atmosphäre laden zum Abschalten ein.</p>
+                        <p>Hier genießt ihr ruhige Stunden - vielleicht mit einer Katze, die sich leise dazugesellt
+                            und den Moment noch ein bisschen schöner macht.</p>
+                    </div>
+                        <div class="slideshow">
                             <div class="slide"><img src="images/romance/romance1.png" alt="Image 1"></div>
                             <div class="slide"><img src="images/romance/romance2.png" alt="Image 2"></div>
                             <div class="slide"><img src="images/romance/romance3.png" alt="Image 3"></div>
                             <div class="slide"><img src="images/romance/romance4.png" alt="Image 4"></div>    
-                            <a class="prev" onclick="prevSlide()">&lt;</a>
-                            <a class="next" onclick="nextSlide()">&gt;</a>
+                            <a class="prev" onclick="prevSlide(this)">&lt;</a>
+                            <a class="next" onclick="nextSlide(this)">&gt;</a>
                         </div>
 
-                    <p><b>Unser Deluxe Zimmer - Komfort mit Charakter</b></p>
-                    <p>Die Deluxe Zimmer bieten euch großzügigen Raum, stilvolle Einrichtung und das gewisse
-                        Extra an Gemütlichkeit.</p>
-                    <p>Ideal für alle, die sich im Urlaub etwas mehr Komfort wünschen und gleichzeitig die
-                        besondere Atmosphäre des Meow Manor voll auskosten möchten.</p>
-                    <p>Hier ist genug Platz zum Entspannen - und vielleicht auch für einen neugierigen,
-                        flauschigen Besucher.</p>
-                        <div class="deluxeSlider">
+                    <div style="margin-left: 45px;">
+                        <p><b>Unser Deluxe Zimmer - Komfort mit Charakter</b></p>
+                        <p>Die Deluxe Zimmer bieten euch großzügigen Raum, stilvolle Einrichtung und das gewisse
+                            Extra an Gemütlichkeit.</p>
+                        <p>Ideal für alle, die sich im Urlaub etwas mehr Komfort wünschen und gleichzeitig die
+                            besondere Atmosphäre des Meow Manor voll auskosten möchten.</p>
+                        <p>Hier ist genug Platz zum Entspannen - und vielleicht auch für einen neugierigen,
+                            flauschigen Besucher.</p>
+                    </div>
+                        <div class="slideshow">
                             <div class="slide"><img src="images/deluxe/deluxe1.png" alt="Image 1"></div>
                             <div class="slide"><img src="images/deluxe/deluxe2.png" alt="Image 2"></div>
                             <div class="slide"><img src="images/deluxe/deluxe3.png" alt="Image 3"></div>
                             <div class="slide"><img src="images/deluxe/deluxe4.png" alt="Image 4"></div>
                             <div class="slide"><img src="images/deluxe/deluxe5.png" alt="Image 5"></div>    
-                            <a class="prev" onclick="prevSlide()">&lt;</a>
-                            <a class="next" onclick="nextSlide()">&gt;</a>
+                            <a class="prev" onclick="prevSlide(this)">&lt;</a>
+                            <a class="next" onclick="nextSlide(this)">&gt;</a>
                         </div>
 
-
-                    <p><b>Unsere Suite - Euer Rückzugsort im Meow Manor</b></p>
-                    <p>Unsere Suiten sind die exklusivsten Zimmer im Haus: lichtdurchflutet, besonders geräumig
-                        und mit liebevollen Details gestaltet.</p>
-                    <p>Sie bieten euch maximale Ruhe und Komfort - ein Ort, an dem ihr euch ganz fallen lassen könnt.</p>
-                    <p>Und wer weiß: Vielleicht wird eure Suite zum Lieblingsplatz einer unserer Katzen.</p>
-                    <img src="" alt="">
+                    <div style="margin-left: 45px;">
+                        <p><b>Unsere Suite - Euer Rückzugsort im Meow Manor</b></p>
+                        <p>Unsere Suiten sind die exklusivsten Zimmer im Haus: lichtdurchflutet, besonders geräumig
+                            und mit liebevollen Details gestaltet.</p>
+                        <p>Sie bieten euch maximale Ruhe und Komfort - ein Ort, an dem ihr euch ganz fallen lassen könnt.</p>
+                        <p>Und wer weiß: Vielleicht wird eure Suite zum Lieblingsplatz einer unserer Katzen.</p>
+                    </div>    
+                        <div class="slideshow">
+                            <div class="slide"><img src="images/suite/suite1.png" alt="Image 1"></div>
+                            <div class="slide"><img src="images/suite/suite2.png" alt="Image 2"></div>
+                            <div class="slide"><img src="images/suite/suite3.png" alt="Image 3"></div>
+                            <div class="slide"><img src="images/suite/suite4.png" alt="Image 4"></div>
+                            <div class="slide"><img src="" alt="Image 5"></div>    
+                            <a class="prev" onclick="prevSlide(this)">&lt;</a>
+                            <a class="next" onclick="nextSlide(this)">&gt;</a>
+                        </div>
+                
+                
+                
                 </article>
             </div>
 
-            <div class="box full residents" id="residentsdiv">
+            <div class="box full residents" id="residents">
                 <div class="residentsintro">
                     <div class="luffy">
                         <img src="" alt="">
@@ -154,30 +170,30 @@
 
 <!--  slideshow js  -->
     <script>
-        const slides = document.querySelectorAll(".slide");
-        let currentSlide = 0;
+        const slideshows = document.querySelectorAll(".slideshow");
 
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                if (i === index) {
-                slide.style.opacity = 100;
-                } else {
-                slide.style.opacity = 0;
-                }
-            });
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
+        slideshows.forEach(slideshow => {
+            const slides = slideshow.querySelectorAll(".slide");
+            let currentSlide = 0;
+        
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.style.opacity = (i === index) ? 1 : 0;
+                });
+            }
+        
+            slideshow.querySelectorAll("a")[0].onclick = () => {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(currentSlide);
+            };
+        
+            slideshow.querySelectorAll("a")[1].onclick = () => {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            };
+        
             showSlide(currentSlide);
-        }
-
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        showSlide(currentSlide);
+        });
     </script>
 
 </body>

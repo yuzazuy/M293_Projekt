@@ -76,10 +76,10 @@
                     </div>
                         <div class="slideshow">
                             <div class="slide"><img src="images/romance/romance1.png" alt="Romance Room View Bed" loading="lazy"></div>
-                            <div class="slide"><img src="images/romance/romance2.png" alt="Romance Room View Entry" loading="lazy"></div>
-                            <div class="slide"><img src="images/romance/romance3.png" alt="Romance Room View Cat" loading="lazy"></div>
-                            <div class="slide"><img src="images/romance/romance4.png" alt="Romance Room View Half Front" loading="lazy"></div>  
-                            <div class="slide"><img src="images/romance/romancebathroom.png" alt="Romance Room Bathroom" loading="lazy"></div>    
+                            <div class="slide"><img data-src="images/romance/romance2.png" alt="Romance Room View Entry"></div>
+                            <div class="slide"><img data-src="images/romance/romance3.png" alt="Romance Room View Cat"></div>
+                            <div class="slide"><img data-src="images/romance/romance4.png" alt="Romance Room View Half Front"></div>  
+                            <div class="slide"><img data-src="images/romance/romancebathroom.png" alt="Romance Room Bathroom"></div>    
                             <a class="prev" onclick="prevSlide(this)">&lt;</a>
                             <a class="next" onclick="nextSlide(this)">&gt;</a>
                         </div>
@@ -96,10 +96,10 @@
                     </div>
                         <div class="slideshow">
                             <div class="slide"><img src="images/deluxe/deluxe1.png" alt="Deluxe Room View Entry" loading="lazy"></div>
-                            <div class="slide"><img src="images/deluxe/deluxe2.png" alt="Deluxe Room View Bed" loading="lazy"></div>
-                            <div class="slide"><img src="images/deluxe/deluxe3.png" alt="Deluxe Room View Cat" loading="lazy"></div>
-                            <div class="slide"><img src="images/deluxe/deluxe4.png" alt="Deluxe Room View Window" loading="lazy"></div>
-                            <div class="slide"><img src="images/deluxe/deluxebathroom.png" alt="Deluxe Room Bathroom" loading="lazy"></div>    
+                            <div class="slide"><img data-src="images/deluxe/deluxe2.png" alt="Deluxe Room View Bed"></div>
+                            <div class="slide"><img data-src="images/deluxe/deluxe3.png" alt="Deluxe Room View Cat"></div>
+                            <div class="slide"><img data-src="images/deluxe/deluxe4.png" alt="Deluxe Room View Window"></div>
+                            <div class="slide"><img data-src="images/deluxe/deluxebathroom.png" alt="Deluxe Room Bathroom"></div>    
                             <a class="prev" onclick="prevSlide(this)">&lt;</a>
                             <a class="next" onclick="nextSlide(this)">&gt;</a>
                         </div>
@@ -114,10 +114,10 @@
                     </div>    
                         <div class="slideshow">
                             <div class="slide"><img src="images/suite/suite1.png" alt="Suite Room View Entry" loading="lazy"></div>
-                            <div class="slide"><img src="images/suite/suite2.png" alt="Suite Room View Bed" loading="lazy"></div>
-                            <div class="slide"><img src="images/suite/suite3.png" alt="Suite Room View Cat" loading="lazy"></div>
-                            <div class="slide"><img src="images/suite/suite4.png" alt="Suite Room View Window" loading="lazy"></div>
-                            <div class="slide"><img src="images/suite/suitebathroom.png" alt="Suite Room Bathroom" loading="lazy"></div>    
+                            <div class="slide"><img data-src="images/suite/suite2.png" alt="Suite Room View Bed"></div>
+                            <div class="slide"><img data-src="images/suite/suite3.png" alt="Suite Room View Cat"></div>
+                            <div class="slide"><img data-src="images/suite/suite4.png" alt="Suite Room View Window"></div>
+                            <div class="slide"><img data-src="images/suite/suitebathroom.png" alt="Suite Room Bathroom"></div>    
                             <a class="prev" onclick="prevSlide(this)">&lt;</a>
                             <a class="next" onclick="nextSlide(this)">&gt;</a>
                         </div>
@@ -349,8 +349,19 @@
         slideshows.forEach(slideshow => {
             const slides = slideshow.querySelectorAll(".slide");
             let currentSlide = 0;
+
+            function loadSlide(index) {
+                const image = slides[index].querySelector("img[data-src]");
+
+                if (image) {
+                    image.src = image.dataset.src;
+                    image.removeAttribute("data-src");
+                }
+            }
         
             function showSlide(index) {
+                loadSlide(index);
+
                 slides.forEach((slide, i) => {
                     slide.style.opacity = (i === index) ? 1 : 0;
                 });

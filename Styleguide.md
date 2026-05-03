@@ -11,4 +11,4 @@ HEX: #FFFDF5, #EBD8F2, #C085D6, #9D40BF, #8B1AB5
 Zentriert
 
 ## Logo
-![Meow Mansion Logo]
+<img src="images/mansionlogo.png" alt="Meow Mansion Logo" title="Meow Mansion Logo" style="max-width: 100%; height: auto;" />

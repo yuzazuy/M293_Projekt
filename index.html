@@ -12,7 +12,7 @@
     <body>
         <header class="header">
             <div class="headerLogo">
-                <img src="images/MeowManorLogo.png" alt="Logo" height="75px">
+                <img src="images/mansionlogo.png" alt="Logo" height="100px">
             </div>
             <nav>
                 <div class="searchbar">
@@ -31,33 +31,7 @@
         </header>
         <main>
             <div class="flexLayout">
-                <div class="forms">
-                    <h3 class="title">Buche jetzt</h3>
-                    <div class="background">
-                        <form action="booking.html">
-                            <div class="mpbooking" style="padding-bottom: 10px;">
-                                <div class="content" style="margin-top: 25px;">
-                                    <label><i class="fa fa-calendar-o"></i> Check-In</label><br>
-                                    <input class="" type="date" placeholder="DD MM YYYY" name="checkIn" required>
-                                </div>
-                                <div class="content">
-                                    <label><i class="fa fa-calendar-o"></i> Check-Out</label><br>
-                                    <input class="" type="date" placeholder="DD MM YYYY" name="checkOut" required>
-                                </div>
-                                <div class="content">
-                                    <label><i class="fa fa-male"></i> Erwachsene</label><br>
-                                    <input class="" type="number" placeholder="1" name="adults" min="1" max="6" required>
-                                </div>
-                                <div class="content">
-                                    <label><i class="fa fa-child"></i> Kinder</label><br>
-                                    <input class="" type="number" placeholder="0" name="kids" min="0" max="6" required>
-                                </div>
-                                <button class="mpbookingbtn" type="submit">Verfügbarkeit überprüfen <i class="fa fa-search"></i></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
+                
                 <div class="welcome">
                     <h1 class="title">Willkommen im Meow Mansion</h1>
                     <h2 class="title">Dem Traumhotel für Menschen, die das Schnurren lieben</h2>
@@ -128,10 +102,35 @@
                         
                     </div>
                 </div>
-
-                <div class="catpics">
-                    
-                        <h3 class="title">Unsere Residents</h3>
+                <div class="forms">
+                    <h3 class="title">Buche jetzt</h3>
+                    <div class="background">
+                        <form action="booking.html">
+                            <div class="mpbooking" style="padding-bottom: 10px;">
+                                <div class="content" style="margin-top: 25px;">
+                                    <label><i class="fa fa-calendar-o"></i> Check-In</label><br>
+                                    <input class="" type="date" placeholder="DD MM YYYY" name="checkIn" required>
+                                </div>
+                                <div class="content">
+                                    <label><i class="fa fa-calendar-o"></i> Check-Out</label><br>
+                                    <input class="" type="date" placeholder="DD MM YYYY" name="checkOut" required>
+                                </div>
+                                <div class="content">
+                                    <label><i class="fa fa-male"></i> Erwachsene</label><br>
+                                    <input class="" type="number" placeholder="1" name="adults" min="1" max="6" required>
+                                </div>
+                                <div class="content">
+                                    <label><i class="fa fa-child"></i> Kinder</label><br>
+                                    <input class="" type="number" placeholder="0" name="kids" min="0" max="6" required>
+                                </div>
+                                <button class="mpbookingbtn" type="submit">Verfügbarkeit überprüfen <i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="residents">
+                    <h3 class="title">Unsere Residents</h3>
+                        <div class="catpics background">
                     
                         <a href="aboutus.html#luna"><img src="images/cats/lunaSitting.png" alt="Cat Luna"></a>
                         <a href="aboutus.html#milo"><img src="images/cats/miloSitting.png" alt="Cat Milo"></a>
@@ -142,6 +141,7 @@
                         <a href="aboutus.html#bella"><img src="images/cats/bellaSitting.png" alt="Cat Bella"></a>
                         <a href="aboutus.html#oreo"><img src="images/cats/oreoSitting.png" alt="Cat Oreo"></a>
                     
+                    </div>
                 </div>
             </div>
         </main>
@@ -161,10 +161,10 @@
                 </div>
                 <div>
                     <p><b>Meow Mansion</b></p>
-                        <p><a href="">Über uns</a></p>
-                        <p><a href="">Die Residents</a></p> 
-                        <p><a href="">Unsere Zimmer</a></p>
-                        <p><a href="">Buchungsformular</a></p>
+                        <p><a href="aboutus.html#aboutus">Über uns</a></p>
+                        <p><a href="aboutus.html#rooms">Unsere Zimmer</a></p>
+                        <p><a href="aboutus.html#residents">Die Residents</a></p> 
+                        <p><a href="booking.html">Buchungsformular</a></p>
                 </div>
         </footer>
     </body>

@@ -4,13 +4,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="newstyle.css">
         <title>cat hotel</title>
     </head>
     <body>
         <header class="header">
             <div class="headerLogo">
-                <img src="images/MeowManorLogo.png" alt="Logo" height="75px">
+                <img src="images/mansionlogo.png" alt="Logo" height="100px">
             </div>
             <nav>
                 <div class="searchbar">
@@ -19,38 +19,105 @@
                 <div class="dropdownmenu">
                     <button class="dropdownbtn">Home</button>
                     <div class="dropdowncontent">
+                        <a href="index.html">Home</a>
                         <a href="aboutus.html#aboutus">Über uns</a>
                         <a href="aboutus.html#rooms">Die Zimmer</a>
                         <a href="aboutus.html#residents">Unsere Lieblinge</a>
-                        <a href="booking.html">Buchungsformular</a>
                     </div>
                 </div>
             </nav>
         </header>
 
-        <footer>
-            <div class="footercontent">
-                <div class="footercontact">
-                    <p><strong>Kontakt</strong></p>
+        <main>
+            <div class="gridLayoutb">
+                <div class="bform box full">
+                    <h2 class="title">Booking</h2>
+                    <div class="bbackground">
+                        <form action="success.html" method="POST" >
+                            <div class="booking">
+                            <label for="room">Zimmer</label>
+                            <select id="room" name="room" required>
+                                <option value="romance">Romantikzimmer</option>
+                                <option value="deluxe">Deluxe Zimmer</option>
+                                <option value="suite">Suite</option>
+                            </select>
+                            </div>
+                            <div class="booking">
+                                <label><i class="fa fa-calendar-o"></i> Check-In</label><br>
+                                <input type="date" placeholder="DD MM YYYY" name="checkIn" required>
+                            </div>
+                            <div class="booking">
+                                <label><i class="fa fa-calendar-o"></i> Check-Out</label><br>
+                                <input type="date" placeholder="DD MM YYYY" name="checkOut" required>
+                            </div>
+                            <div class="booking">
+                                <label>Vorname(n)</label><br>
+                                <input type="text" required>
+                            </div>
+                            <div class="booking">
+                                <label>Nachname</label><br>
+                                <input type="text" required>
+                            </div>
+                            <div class="booking">
+                                <label>Adresse</label><br>
+                                <input type="text" required>
+                            </div>
+                            <div class="booking">
+                                <label>PLZ & Ort</label><br>
+                                <input type="text" required>
+                            </div>
+                            <div class="booking">
+                                <label>Telefonnummer</label><br>
+                                <input type="text" required>
+                            </div>
+                            <div class="booking">
+                                <label>E-Mail</label><br>
+                                <input type="text" required>
+                            </div>
+                            <div class="booking">
+                                <label><i class="fa fa-male"></i> Erwachsene</label><br>
+                                <input type="number" placeholder="1" name="adults" min="1" max="6" required>
+                            </div>
+                            <div class="booking">
+                                <label><i class="fa fa-child"></i> Kinder</label><br>
+                                <input type="number" placeholder="0" name="kids" min="0" max="6">
+                            </div>
+                            <button class="btn" type="submit">Buchen</button>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="fcontent">
+                <div>
+                    <p><b>Kontakt</b></p>
                         <p>Meow Mansion AG <br>
                         Lena Hartmann <br>
                         Musterstrasse 13 <br>
                         1312 Musterstadt</p>
                 </div>
-                <div class="footerstuff">
-                    <p><strong>Impressum</strong></p>
-                    <p><strong>Datenschutz</strong></p>
-                    <p><strong>AGB</strong></p>
-                    <p><strong>FAQ</strong></p>
+                <div>
+                    <p><b><a href="impressum.html#impressum">Impressum</a></b></p>
+                    <p><b><a href="impressum.html#datenschutz">Datenschutz</a></b></p>
+                    <p><b><a href="impressum.html#agb">AGB</a></b></p>
+                    <p><b><a href="impressum.html#faq">FAQ</a></b></p>
                 </div>
-                <div class="footerlinks">
-                    <p><strong>Meow Mansion</strong></p>
-                        <p><a href="">Über uns</a></p>
-                        <p><a href="">Die Residents</a></p> 
-                        <p><a href="">Unsere Zimmer</a></p>
-                        <p><a href="">Buchungsformular</a></p>
+                <div>
+                    <p><b>Meow Mansion</b></p>
+                        <p><a href="aboutus.html#aboutus">Über uns</a></p>
+                        <p><a href="aboutus.html#rooms">Unsere Zimmer</a></p>
+                        <p><a href="aboutus.html#residents">Die Residents</a></p> 
+                        <p><a href="booking.html">Buchungsformular</a></p>
                 </div>
-            </div>
         </footer>
+        <script>
+            const roomSelect = document.getElementById("room");
+            const selectedRoom = new URLSearchParams(window.location.search).get("room");
+
+            if (selectedRoom && roomSelect.querySelector(`option[value="${selectedRoom}"]`)) {
+                roomSelect.value = selectedRoom;
+            }
+        </script>
     </body>
 </html>

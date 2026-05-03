@@ -7,14 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="newstyle.css">
-    <link rel="stylesheet" type="text/css" href="slideshow.css">
     <title>Über uns.. :)</title>
 </head>
 
 <body>
     <header class="header">
         <div class="headerLogo">
-            <img src="images/MeowManorLogo.png" alt="Logo" height="75px">
+            <img src="images/mansionlogo.png" alt="Logo" style="height: 100px;">
         </div>
         <nav>
             <div class="searchbar">
@@ -84,7 +83,7 @@
                             <a class="prev" onclick="prevSlide(this)">&lt;</a>
                             <a class="next" onclick="nextSlide(this)">&gt;</a>
                         </div>
-                    <a href="booking.html" class="btn">Verfügbarkeit überprüfen <i class="fa fa-search"></i></a>
+                    <a href="booking.html?room=romance" class="btn">Verfügbarkeit überprüfen <i class="fa fa-search"></i></a>
 
                     <div style="margin-left: 40px;">
                         <p><b>Unser Deluxe Zimmer - Komfort mit Charakter</b></p>
@@ -104,7 +103,7 @@
                             <a class="prev" onclick="prevSlide(this)">&lt;</a>
                             <a class="next" onclick="nextSlide(this)">&gt;</a>
                         </div>
-                        <a href="booking.html" class="btn">Verfügbarkeit überprüfen <i class="fa fa-search"></i></a>
+                        <a href="booking.html?room=deluxe" class="btn">Verfügbarkeit überprüfen <i class="fa fa-search"></i></a>
 
                     <div style="margin-left: 40px;">
                         <p><b>Unsere Suite - Euer Rückzugsort im Meow Mansion</b></p>
@@ -122,7 +121,7 @@
                             <a class="prev" onclick="prevSlide(this)">&lt;</a>
                             <a class="next" onclick="nextSlide(this)">&gt;</a>
                         </div>
-                        <a href="booking.html" class="btn">Verfügbarkeit überprüfen <i class="fa fa-search"></i></a>                
+                        <a href="booking.html?room=suite" class="btn">Verfügbarkeit überprüfen <i class="fa fa-search"></i></a>                
                 
                 
                 </article>
@@ -130,9 +129,8 @@
 
             <div class="box full residents" id="residents">
                 <div class="background content">
-                    <h3 class="title">Unsere Residents</h3>
+                    <h3 class="title" style="margin-bottom: 30px;">Unsere Residents</h3>
                     <div class="catbox" id="luna">
-                        
                         <img class="catimage" src="images/cats/lunaPlaying.png" alt="Cat Luna Playing">
                         <div class="catinfo">
                             <p><b>Luna</b></p>
@@ -154,7 +152,6 @@
                                 <li>„leise Begleiterin“ statt Mittelpunkt</li>
                             </ul>
                         </div>
-                        
                     </div>
                     <div class="catbox" id="milo">
                         <img class="catimage" src="images/cats/miloPlaying.png" alt="Cat Milo Playing">
@@ -180,6 +177,7 @@
                         </div> 
                     </div>
                     <div class="catbox" id="nala">
+                        <img class="catimage" src="images/cats/nalaPlaying.png" alt="Cat Nala Playing">
                         <div class="catinfo">
                             <p><b>Nala</b></p>
                             <p>Alter: 4 Jahre</p>
@@ -191,9 +189,6 @@
                                 <p>Sie hat eine sehr ruhige, warme Ausstrahlung und liebt es, sich auf den Schoß oder neben ihre Gäste zu legen. Ihr Schnurren ist leise, aber konstant – fast wie ein beruhigender Hintergrundklang.</p>
                                 <p>Nala ist sehr geduldig und eignet sich perfekt für Gäste, die sich nach Nähe und Geborgenheit sehnen. Sie ist wenig verspielt, dafür umso mehr auf Kuscheln und gemeinsame Ruhemomente fokussiert.</p>
                             </article>
-                        </div>
-                        <div class="catspecs">
-                            <img src="images/cats/nalaPlaying.png" alt="Cat Nala Playing">
                             <p><b>Besondere Eigenschaften:</b></p>
                             <ul>
                                 <li>extrem verschmust und anhänglich</li>
@@ -205,6 +200,7 @@
                         </div>
                     </div>
                     <div class="catbox" id="leo">
+                        <img class="catimage" src="images/cats/leoPlaying.png" alt="Cat Leo Playing">
                         <div class="catinfo">
                             <p><b>Leo</b></p>
                             <p>Alter: 5 Jahre</p>
@@ -216,9 +212,6 @@
                                 <p>Er ist freundlich, aber nicht aufdringlich. Leo entscheidet selbst, wann er Nähe möchte, und kommt dann ruhig dazu, um sich streicheln zu lassen. Seine Gelassenheit wirkt oft ansteckend und sorgt für eine besonders entspannte Atmosphäre im Raum.</p>
                                 <p>Er ist ideal für Gäste, die eine ruhige, elegante Begleitung schätzen, ohne ständig im Mittelpunkt zu stehen.</p>
                             </article>
-                        </div>
-                        <div class="catspecs">
-                            <img src="images/cats/leoPlaying.png" alt="Cat Leo Playing">
                             <p><b>Besondere Eigenschaften:</b></p>
                             <ul>
                                 <li>ruhig und selbstsicher</li>
@@ -230,6 +223,7 @@
                         </div>
                     </div>
                     <div class="catbox" id="kira">
+                        <img class="catimage" src="images/cats/kiraPlaying.png" alt="Cat Kira Playing">
                         <div class="catinfo">
                             <p><b>Kira</b></p>
                             <p>Alter: 1.5 Jahre</p>
@@ -241,9 +235,6 @@
                                 <p>Hat sie Vertrauen gefasst, kommt sie vorsichtig näher, legt sich dazu und genießt leise Zuneigung. Ihre Bewegungen sind sanft und zurückhaltend, ihre Art wirkt fast zart.</p>
                                 <p>Kira ist perfekt für ruhige Gäste, die Geduld mitbringen und die besondere Verbindung schätzen, die entsteht, wenn eine Katze langsam Vertrauen aufbaut.</p>
                             </article>
-                        </div>
-                        <div class="catspecs">
-                            <img src="images/cats/kiraPlaying.png" alt="Cat Kira Playing">
                             <p><b>Besondere Eigenschaften:</b></p>
                             <ul>
                                 <li>schüchtern, aber sehr liebevoll</li>
@@ -255,6 +246,7 @@
                         </div>
                     </div>
                     <div class="catbox" id="simba">
+                        <img class="catimage" src="images/cats/simbaPlaying.png" alt="Cat Simba Playing">
                         <div class="catinfo">
                             <p><b>Simba</b></p>
                             <p>Alter: 3 Jahre</p>
@@ -263,12 +255,9 @@
                             <article>
                                 <p><b>Charakterbeschreibung:</b></p>
                                 <p>Simba ist voller Energie und Lebensfreude. Er liebt es zu rennen, zu springen und alles zu erkunden. Kein Spielzeug ist vor ihm sicher, und oft sorgt er mit seinen spontanen Aktionen für ein Lächeln.</p>
-                                <p>Er ist sehr kontaktfreudig und sucht aktiv Interaktion – sei es beim Spielen oder einfach durch seine neugierige Art. Trotz seiner Energie ist er freundlich und ausgeglichen, nie aggressiv oder überfordernd.</p>
+                                <p>Er ist sehr kontaktfreudig und sucht aktiv Interaktion - sei es beim Spielen oder einfach durch seine neugierige Art. Trotz seiner Energie ist er freundlich und ausgeglichen, nie aggressiv oder überfordernd.</p>
                                 <p>Simba ist perfekt für Gäste, die sich Unterhaltung wünschen und Freude daran haben, mit einer lebhaften Katze zu interagieren.</p>
                             </article>
-                        </div>
-                        <div class="catspecs">
-                            <img src="images/cats/simbaPlaying.png" alt="Cat Simba Playing">
                             <p><b>Besondere Eigenschaften:</b></p>
                             <ul>
                                 <li>sehr aktiv und verspielt</li>
@@ -280,6 +269,7 @@
                         </div>
                     </div>
                     <div class="catbox" id="bella">
+                        <img class="catimage" src="images/cats/bellaPlaying.png" alt="Cat Bella Playing">
                         <div class="catinfo">
                             <p><b>Bella</b></p>
                             <p>Alter: 6 Jahre</p>
@@ -288,12 +278,9 @@
                             <article>
                                 <p><b>Charakterbeschreibung:</b></p>
                                 <p>Bella ist die Ruhe selbst. Sie bewegt sich langsam, bedacht und mit einer angenehmen Gelassenheit durch den Raum. Am liebsten liegt sie an warmen, gemütlichen Plätzen und beobachtet still das Geschehen.</p>
-                                <p>Sie ist freundlich, aber zurückhaltend – eine Begleiterin, die einfach „da ist“, ohne Aufmerksamkeit zu fordern. Ihre Anwesenheit wirkt beruhigend und schafft eine harmonische Atmosphäre.</p>
+                                <p>Sie ist freundlich, aber zurückhaltend - eine Begleiterin, die einfach „da ist“, ohne Aufmerksamkeit zu fordern. Ihre Anwesenheit wirkt beruhigend und schafft eine harmonische Atmosphäre.</p>
                                 <p>Bella ist ideal für Gäste, die absolute Entspannung suchen und eine unaufdringliche, ruhige Katze schätzen.</p>
                             </article>
-                        </div>
-                        <div class="catspecs">
-                            <img src="images/cats/bellaPlaying.png" alt="Cat Bella Playing">
                             <p><b>Besondere Eigenschaften:</b></p>
                             <ul>
                                 <li>sehr ruhig und ausgeglichen</li>
@@ -305,6 +292,7 @@
                         </div>
                     </div>
                     <div class="catbox" id="oreo">
+                        <img class="catimage" src="images/cats/oreoPlaying.png" alt="Cat Oreo Playing">
                         <div class="catinfo">
                             <p><b>Oreo</b></p>
                             <p>Alter: 2 Jahre</p>
@@ -316,9 +304,6 @@
                                 <p>Seine unkomplizierte, freundliche Art macht ihn besonders beliebt. Er kommt schnell mit neuen Menschen zurecht und passt sich gut an verschiedene Stimmungen an.</p>
                                 <p>Oreo ist ideal für Gäste, die sowohl Aktivität als auch entspannte Kuschelmomente genießen möchten.</p>
                             </article>
-                        </div>
-                        <div class="catspecs">
-                            <img src="images/cats/oreoPlaying.png" alt="Cat Oreo Playing">
                             <p><b>Besondere Eigenschaften:</b></p>
                             <ul>
                                 <li>Mischung aus verspielt und verschmust</li>
@@ -337,23 +322,23 @@
     <footer class="fcontent">
         <div>
             <p><b>Kontakt</b></p>
-            <p>Meow Mansion AG <br>
+                <p>Meow Mansion AG <br>
                 Lena Hartmann <br>
                 Musterstrasse 13 <br>
                 1312 Musterstadt</p>
         </div>
         <div>
-            <p><b>Impressum</b></p>
-            <p><b>Datenschutz</b></p>
-            <p><b>AGB</b></p>
-            <p><b>FAQ</b></p>
+            <p><b><a href="impressum.html#impressum">Impressum</a></b></p>
+            <p><b><a href="impressum.html#datenschutz">Datenschutz</a></b></p>
+            <p><b><a href="impressum.html#agb">AGB</a></b></p>
+            <p><b><a href="impressum.html#faq">FAQ</a></b></p>
         </div>
         <div>
             <p><b>Meow Mansion</b></p>
-            <p><a href="">Über uns</a></p>
-            <p><a href="">Die Residents</a></p>
-            <p><a href="">Unsere Zimmer</a></p>
-            <p><a href="">Buchungsformular</a></p>
+                <p><a href="aboutus.html#aboutus">Über uns</a></p>
+                <p><a href="aboutus.html#rooms">Unsere Zimmer</a></p>
+                <p><a href="aboutus.html#residents">Die Residents</a></p> 
+                <p><a href="booking.html">Buchungsformular</a></p>
         </div>
     </footer>
 
@@ -383,6 +368,13 @@
         
             showSlide(currentSlide);
         });
+    
+        const params = new URLSearchParams(window.location.search);
+        const room = params.get("room");
+
+        if (room) {
+            document.getElementById("room").value = room;
+        }
     </script>
 
 </body>

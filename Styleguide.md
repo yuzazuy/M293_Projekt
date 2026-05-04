@@ -1,4 +1,4 @@
-# Styleguid
+# Styleguide
 
 ## Schriftarten
 Titel: Cavalier Regular (DaFont.com)

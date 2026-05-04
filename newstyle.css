@@ -7,6 +7,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --transition-fast: 0.18s ease;
+    --transition-soft: 0.28s ease;
+    --shadow-soft: 0 10px 24px rgba(139, 26, 181, 0.12);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -32,6 +38,7 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+    transition: transform var(--transition-soft), filter var(--transition-soft), opacity var(--transition-soft);
 }
 
 h1 {
@@ -82,6 +89,11 @@ strong {
     border-radius: 25px;
     padding: clamp(18px, 3vw, 35px);
     overflow-wrap: break-word;
+    transition: transform var(--transition-soft), box-shadow var(--transition-soft), background-color var(--transition-soft);
+}
+
+.background:hover {
+    box-shadow: var(--shadow-soft);
 }
 
 table {
@@ -125,6 +137,7 @@ tr:nth-child(even) {
     justify-content: space-between;
     gap: 20px;
     padding: 5px 35px;
+    transition: border-radius var(--transition-soft), padding var(--transition-soft), background-color var(--transition-soft);
 }
 
 .headerLogo {
@@ -136,6 +149,10 @@ tr:nth-child(even) {
 .headerLogo img {
     width: auto;
     max-height: 100px;
+}
+
+.headerLogo img:hover {
+    transform: scale(1.04);
 }
 
 .header nav {
@@ -153,6 +170,13 @@ tr:nth-child(even) {
     background-color: #fffdf5;
     font-size: 16px;
     width: min(220px, 100%);
+    outline: 2px solid transparent;
+    transition: width var(--transition-soft), background-color var(--transition-fast), outline-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.searchbar input[type="text"]:focus {
+    outline-color: #9d40bf;
+    box-shadow: 0 0 0 4px rgba(157, 64, 191, 0.16);
 }
 
 .dropdownmenu {
@@ -166,10 +190,17 @@ tr:nth-child(even) {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    border-radius: 25px;
+    transition: background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+}
+
+.dropdownbtn:hover,
+.dropdownbtn:focus-visible {
+    background-color: #C085D6;
+    transform: translateY(-1px);
 }
 
 .dropdowncontent {
-    display: none;
     position: absolute;
     right: 0;
     z-index: 50;
@@ -178,6 +209,11 @@ tr:nth-child(even) {
     min-width: 200px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity var(--transition-soft), visibility var(--transition-soft), transform var(--transition-soft), box-shadow var(--transition-soft);
 }
 
 .dropdowncontent a {
@@ -186,14 +222,21 @@ tr:nth-child(even) {
     text-decoration: none;
     display: block;
     border-radius: 25px;
+    transition: background-color var(--transition-fast), color var(--transition-fast), padding-left var(--transition-fast);
 }
 
 .dropdowncontent a:hover {
     background-color: #EBD8F2;
+    color: #8b1ab5;
+    padding-left: 22px;
 }
 
-.dropdownmenu:hover .dropdowncontent {
-    display: block;
+.dropdownmenu:hover .dropdowncontent,
+.dropdownmenu:focus-within .dropdowncontent {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
 }
 
 /* Footer */
@@ -203,6 +246,7 @@ footer {
     padding: 15px 0 25px 0;
     left: 0;
     bottom: 0;
+    transition: background-color var(--transition-soft);
 }
 
 footer.fcontent {
@@ -223,6 +267,12 @@ footer div {
 footer a {
     color: #9d40bf;
     text-decoration: none;
+    transition: color var(--transition-fast), opacity var(--transition-fast);
+}
+
+footer a:hover {
+    color: #8b1ab5;
+    opacity: 0.78;
 }
 
 /* Layouts */
@@ -325,6 +375,8 @@ footer a {
     margin-top: 8px;
     padding: 8px 25px;
     background-color: #EBD8F2;
+    outline: 2px solid transparent;
+    transition: background-color var(--transition-fast), outline-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
 }
 
 .mpbookingbtn,
@@ -342,6 +394,27 @@ footer a {
     background-color: #EBD8F2;
     color: #9d40bf;
     cursor: pointer;
+    transition: background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.mpbookingbtn:hover,
+.mpbookingbtn:focus-visible,
+.btn:hover,
+.btn:focus-visible {
+    background-color: #D2A7E2;
+    color: #fffdf5;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-soft);
+}
+
+.mpbookingbtn:active,
+.btn:active {
+    transform: translateY(0);
+}
+
+.mpbooking .content input:focus {
+    outline-color: #9d40bf;
+    box-shadow: 0 0 0 4px rgba(157, 64, 191, 0.16);
 }
 
 /* Residents Startseite */
@@ -375,6 +448,22 @@ footer a {
     border-radius: 50%;
 }
 
+.catpics a:hover img,
+.catpics a:focus-visible img {
+    transform: translateY(-5px) scale(1.04);
+    filter: saturate(1.08);
+}
+
+@media (min-width: 1300px) {
+    .catpics {
+        flex-wrap: nowrap;
+    }
+
+    .catpics img {
+        width: clamp(120px, 10vw, 150px);
+    }
+}
+
 /* Impressum */
 .infos {
     display: flex;
@@ -396,6 +485,11 @@ footer a {
     border: 6px solid #D2A7E2;
     border-radius: 25px;
     margin-top: 12px;
+}
+
+.aboutus img:hover,
+.catimage:hover {
+    transform: scale(1.02);
 }
 
 .catbox {
@@ -473,6 +567,14 @@ footer a {
     margin-bottom: 8px;
     background-color: #EBD8F2;
     color: #8b1ab5;
+    outline: 2px solid transparent;
+    transition: background-color var(--transition-fast), outline-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
+}
+
+.booking input:focus,
+.booking select:focus {
+    outline-color: #9d40bf;
+    box-shadow: 0 0 0 4px rgba(157, 64, 191, 0.16);
 }
 
 /* Slideshow, falls slideshow.css nicht alles regelt */
@@ -487,6 +589,11 @@ footer a {
     overflow: hidden;
     transform: translateY(0%);
     border-radius: 25px;
+    transition: box-shadow var(--transition-soft), transform var(--transition-soft);
+}
+
+.slideshow:hover {
+    box-shadow: var(--shadow-soft);
 }
 
 .slide {
@@ -495,7 +602,7 @@ footer a {
     top: auto;
     transform: none;
     opacity: 0;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.45s ease;
 }
 
 .slide img {
@@ -516,6 +623,16 @@ footer a {
     text-decoration: none;
     z-index: 10;
     background-color: transparent;
+    border-radius: 25px;
+    transition: background-color var(--transition-fast), transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+.prev:hover,
+.next:hover,
+.prev:focus-visible,
+.next:focus-visible {
+    background-color: rgba(157, 64, 191, 0.35);
+    opacity: 0.95;
 }
 
 .prev {
@@ -594,8 +711,13 @@ footer a {
     .dropdowncontent {
         left: 50%;
         right: auto;
-        transform: translateX(-50%);
+        transform: translate(-50%, -8px);
         text-align: center;
+    }
+
+    .dropdownmenu:hover .dropdowncontent,
+    .dropdownmenu:focus-within .dropdowncontent {
+        transform: translate(-50%, 0);
     }
 
     .flexLayout,
@@ -780,5 +902,16 @@ footer a {
     .mpbooking .content input {
         padding-left: 16px;
         padding-right: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
     }
 }
